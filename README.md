@@ -6,7 +6,7 @@ Let $W_b(t)$ equal $b(1-1/t)$ for $1<t\le b$, $b^2/t-1$ for $b<t<b^2$, and zero 
 
 $$
  H_b(\rho)=e^{i\tau\log b}h_\rho,\qquad
- h_\rho=\frac{\sqrt b\,(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0.
+ h_\rho=\frac{\sqrt b\thinspace(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0.
 $$
 
 Integrating the two pieces against $t^{s-1}dt$ yields the displayed rational expression in $b^s$. On the open strip the modulus of $b^s$ lies strictly between $1$ and $b$, so neither numerator factor vanishes. For $\Re s=1/2$, put $z=b^s$, so $z\bar z=b$ and $s(s-1)=-|s|^2$. Consequently $(z-1)(z-b)=-z(b+1-2\Re z)$. The real multiplier of $z$ is positive since $b+1-2\Re z\ge(\sqrt b-1)^2>0$.
@@ -29,7 +29,7 @@ With the pinned toolchain and Mathlib cache already installed, use
 
 ```sh
 cd /path/to/pinned/mathlib4
-lake env python3 /path/to/repository/verify.py /path/to/upstream/lean/src /path/to/build
+lake env python3 /path/to/repository/verify.py /path/to/empty/directory /path/to/build
 ```
 
 The build directory can begin empty. Reusing a dependency cache requires the same sources and compiler. A successful run ends with the kernel and axiom summary recorded below.
