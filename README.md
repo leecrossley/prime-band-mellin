@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410836.svg)](https://doi.org/10.5281/zenodo.24410836)
 
+This result is now maintained in [prime-window-all-widths](https://github.com/leecrossley/prime-window-all-widths/tree/main/results/prime-band-mellin). This repository is archived and keeps its releases and DOI.
+
 The tent weights in this family have a simple transform, $H_b(s)=(b^s-1)(b^s-b)/(s(s-1))$. This repository gives a Lean proof of two facts about it: it never vanishes for $0<\Re s<1$, and on the critical line it equals $b^s$ times a positive real number.
 
 Of the companion repositories, prime-band-extrema cites this one, and it uses only the critical-line phase. Because the transform never vanishes in the strip, the weight cannot cancel the contribution of a zeta zero. In prime-band-extrema the exact phase lets the zero terms line up to give the limsup. The closed form there for the total zero contribution comes from the positive real factor together with a contour integral.
